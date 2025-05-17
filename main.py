@@ -138,7 +138,8 @@ def process_user_message(user_message):
     User's message : {user_message}
     
     Provide a helpful response that assists the user in improving their resume content, skills and interview preparation.
-    Be specific, actionable and supportive. If they ask about specific skills or experience from their resume , refer to the content. 
+    Be specific, actionable and supportive. If they ask about specific skills or experience from their resume , refer to the content.
+    Don't answer questions outside the scope of this application.
     '''
 
     response = client.chat.completions.create(
