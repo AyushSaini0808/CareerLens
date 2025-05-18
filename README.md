@@ -41,13 +41,8 @@ cd CareerLens
 
 Using uv:
 ```bash
-uv venv
-uv pip install -r requirements.txt
-```
-
-Or with standard pip:
-```bash
-pip install -r requirements.txt
+uv init .
+uv add langchain-groq streamlit groq pypdf2
 ```
 
 ### Set Up Environment Variables
