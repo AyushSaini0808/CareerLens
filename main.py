@@ -163,7 +163,7 @@ def main():
         
     if not st.session_state.api_key_validated:
         st.divider()
-        st.markdown("This streamlit application is designed to allow users gain insights about their resume against a job position or for any general job application. You can also chat with the assistant to prepare for technical or behavioral interviews.")
+        st.markdown("This Streamlit application helps users gain valuable insights into their resumes for specific job positions or general job applications. Additionally, you can interact with the assistant to prepare effectively for both technical and behavioral interviews.")
         st.markdown("Before you start with the interview preparation process, we would request you to upload the API key for the Groq API. You can obtain the API key from [here](https://groq.com/).")
         st.divider()
         api_key = st.text_input("Please enter your credentials", type="password", placeholder="Enter your Groq API Key")
