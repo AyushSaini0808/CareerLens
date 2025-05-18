@@ -2,6 +2,9 @@ css_setup='''<style>
         .main {
             background-color: #f5f7fa;
         }
+        div[data-testid="InputInstructions"] > span:nth-child(1) {
+            visibility: hidden;
+        }
         [data-testid="stBaseButton-secondary"]:hover{
             background-color:#554FDD;
             color:#FFFFFF;
