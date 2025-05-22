@@ -155,7 +155,7 @@ def main():
     # Setting up page configurations and API key
     st.set_page_config(page_title="CareerLens - Your AI-powered Resume Analyser and Interview Coach", page_icon="👨🏻‍💻", layout="centered")
     st.markdown(css_setup, unsafe_allow_html=True)
-    st.title("Prepify - Your AI Assistant for Interview Preparation")
+    st.title("CareerLens - Your AI Assistant for Interview Preparation")
     st.write("Developed by Ayush Saini")
     
     if "api_key_validated" not in st.session_state:
