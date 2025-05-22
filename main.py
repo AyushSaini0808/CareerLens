@@ -198,7 +198,7 @@ def main():
                 st.markdown(user_input)
             # Generating response from Groq
             with st.chat_message("ai"):
-                with st.spinner("Thinking ..."):
+                with st.spinner("Contemplating, please stand by ..."):
                     response=process_user_message(user_message=user_input)
                     st.markdown(response)
                     st.session_state.messages.append(AIMessage(content=response))
