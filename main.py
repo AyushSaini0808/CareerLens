@@ -25,7 +25,7 @@ def check_api_key(api_key):
     try:
         client = Groq(api_key=api_key)
         response=client.chat.completions.create(
-            model="gemma2-9b-it",
+            model="openai/gpt-oss-20b",
             messages=[{"role":"user","content":"Hello"}],
             max_tokens=20
         )
@@ -115,7 +115,7 @@ def get_interview_questions(resume_text,job_role,question_type="general"):
     }
     prompt=prompt_mapping.get(question_type,prompt_mapping["general"])
     response=client.chat.completions.create(
-        model="meta-llama/llama-guard-4-12b",
+        model="openai/gpt-oss-20b",
         messages=[{"role":"user","content":prompt}],
         max_tokens=200,
         temperature=0.6
@@ -143,7 +143,7 @@ def process_user_message(user_message):
     '''
 
     response = client.chat.completions.create(
-        model="gemma2-9b-it",
+        model="openai/gpt-oss-20b",
         max_tokens=1000,
         temperature = 0.3,
         messages=[{"role":"user","content":prompt}]   
