@@ -96,7 +96,7 @@ def analyse_resume(resume_text,job_role):
     Focus your response in a clear, organised manner.
     '''
     response=client.chat.completions.create(
-        model="gemma2-9b-it",
+        model="openai/gpt-oss-20b",
         messages=[{"role":"user","content":prompt}],
         max_tokens=1000,
         temperature=0.3
