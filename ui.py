@@ -7,7 +7,7 @@ css_setup = '''
     
     /* App container with gradient background */
     .stAppViewContainer {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
         background-attachment: fixed;
     }
     
@@ -34,7 +34,7 @@ css_setup = '''
     .stHeading h1 {
         font-size: 3.5em !important;
         font-weight: 800 !important;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         text-align: center;
@@ -56,13 +56,13 @@ css_setup = '''
     
     /* Primary button styling */
     .stButton > button {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
         color: white;
         border-radius: 12px;
         padding: 0.75em 2em;
         font-weight: 600;
         border: none;
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        box-shadow: 0 4px 15px rgba(0, 210, 255, 0.4);
         transition: all 0.3s ease;
         text-transform: uppercase;
         letter-spacing: 0.5px;
@@ -71,8 +71,8 @@ css_setup = '''
     
     .stButton > button:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
-        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        box-shadow: 0 6px 20px rgba(0, 210, 255, 0.6);
+        background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
     }
     
     .stButton > button:active {
@@ -82,8 +82,8 @@ css_setup = '''
     /* Secondary button styling */
     [data-testid="stBaseButton-secondary"] {
         background-color: #f7fafc;
-        color: #667eea;
-        border: 2px solid #667eea;
+        color: #00d2ff;
+        border: 2px solid #00d2ff;
         border-radius: 12px;
         padding: 0.6em 1.5em;
         font-weight: 600;
@@ -91,11 +91,11 @@ css_setup = '''
     }
     
     [data-testid="stBaseButton-secondary"]:hover {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
         color: white;
         border-color: transparent;
         transform: translateY(-2px);
-        box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        box-shadow: 0 4px 15px rgba(0, 210, 255, 0.3);
     }
     
     /* Text input styling */
@@ -109,8 +109,8 @@ css_setup = '''
     }
     
     .stTextInput > div > div > input:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #00d2ff;
+        box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.1);
         outline: none;
     }
     
@@ -122,8 +122,8 @@ css_setup = '''
     }
     
     .stTextArea textarea:focus {
-        border-color: #667eea;
-        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        border-color: #00d2ff;
+        box-shadow: 0 0 0 3px rgba(0, 210, 255, 0.1);
     }
     
     /* File uploader styling */
@@ -136,7 +136,7 @@ css_setup = '''
     }
     
     [data-testid="stFileUploader"]:hover {
-        border-color: #667eea;
+        border-color: #00d2ff;
         background-color: #edf2f7;
     }
     
@@ -157,14 +157,14 @@ css_setup = '''
     
     /* AI message specific styling */
     [data-testid="stChatMessage"][data-testid*="assistant"] {
-        background: linear-gradient(135deg, #f0f4ff 0%, #e9f0ff 100%);
-        border-left: 4px solid #667eea;
+        background: linear-gradient(135deg, #e3f9ff 0%, #d1f4ff 100%);
+        border-left: 4px solid #00d2ff;
     }
     
     /* User message specific styling */
     [data-testid="stChatMessage"][data-testid*="user"] {
-        background: linear-gradient(135deg, #fef5ff 0%, #f3e8ff 100%);
-        border-left: 4px solid #764ba2;
+        background: linear-gradient(135deg, #fff9e6 0%, #fff4d1 100%);
+        border-left: 4px solid #ffa500;
     }
     
     /* Chat input styling */
@@ -176,13 +176,13 @@ css_setup = '''
     }
     
     [data-testid="stChatInput"]:focus-within {
-        border-color: #667eea;
-        box-shadow: 0 4px 20px rgba(102, 126, 234, 0.2);
+        border-color: #00d2ff;
+        box-shadow: 0 4px 20px rgba(0, 210, 255, 0.2);
     }
     
     /* Sidebar styling */
     [data-testid="stSidebar"] {
-        background: linear-gradient(180deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(180deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
         padding: 2rem 1rem;
     }
     
@@ -245,7 +245,7 @@ css_setup = '''
     
     /* Spinner styling */
     .stSpinner > div {
-        border-top-color: #667eea !important;
+        border-top-color: #00d2ff !important;
     }
     
     /* Divider styling */
@@ -291,12 +291,12 @@ css_setup = '''
     }
     
     ::-webkit-scrollbar-thumb {
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
         border-radius: 10px;
     }
     
     ::-webkit-scrollbar-thumb:hover {
-        background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+        background: linear-gradient(135deg, #3a7bd5 0%, #00d2ff 100%);
     }
     
     /* Animation for elements */
